@@ -1,0 +1,28 @@
+# Bỏ file tạo tự động
+__pycache__/
+*.pyc
+
+# Bỏ môi trường ảo
+venv/
+.env/
+.venv/
+
+# Bỏ file Jupyter checkpoint
+.ipynb_checkpoints/
+
+# Bỏ dữ liệu lớn
+data/
+*.csv
+*.xlsx
+
+# Bỏ file log và tạm
+*.log
+*.tmp
+
+# Bỏ file IDE
+.vscode/
+.idea/
+
+# Bỏ file hệ thống
+.DS_Store
+Thumbs.db
