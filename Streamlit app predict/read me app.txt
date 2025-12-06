@@ -1,0 +1,51 @@
+PROJECT FILE STRUCTURE & EXPLANATIONS
+
+PYTHON SCRIPTS (.py)
+--------------------
+1. app.py
+   - PURPOSE: This is the main application file.
+   - USE: Run this file with `streamlit run app.py` to launch the web interface. It loads the models and handles user interaction.
+
+2. save_model.py
+   - PURPOSE: A utility script to train and save the models.
+   - USE: This script contains the logic to export the trained model and preprocessors from your data analysis into the standalone .pkl files.
+
+PICKLE FILES (.pkl)
+-------------------
+3. model.pkl
+   - PURPOSE: The trained Machine Learning model (likely XGBoost).
+   - USE: Used by app.py to predict whether a customer will subscribe to a term deposit based on the input data.
+
+4. preprocessor.pkl
+   - PURPOSE: The data cleaning and transformation pipeline.
+   - USE: Converts raw user inputs (categories, numbers) into the mathematical format required by the model.
+
+5. pca.pkl
+   - PURPOSE: Principal Component Analysis object.
+   - USE: Reduces the complexity (dimensionality) of the data before it enters the model, if your model was trained using PCA.
+
+6. columns_info.pkl
+   - PURPOSE: Metadata about the dataset columns.
+   - USE: Ensures that the application knows exactly which columns to expect and in what order.
+
+TEXT & CONFIGURATION (.txt)
+---------------------------
+7. requirements.txt
+   - PURPOSE: Dependency list.
+   - USE: Tells GitHub (or any other user) which Python libraries to install. Usage: `pip install -r requirements.txt`.
+
+DOCUMENTATION (.md, .docx)
+--------------------------
+8. Streamlit_App_Guide.md
+   - PURPOSE: User Guide.
+   - USE: A markdown file containing instructions on how to use the app.
+
+9. KPDL25 - De tai cuoi ky (1).docx
+   - PURPOSE: Project Report.
+   - USE: The final report document describing the project, methodology, and results.
+
+DATA SCIENCE NOTEBOOKS
+----------------------
+10. code nhà làm.ipynb
+    - PURPOSE: The "Home-made" Jupyter Notebook.
+    - USE: Contains all your experiments, data analysis, charts, and the training history of your models.
